@@ -3,8 +3,8 @@ Build an ELT Pipeline, using industry standard tools such as dbt, Snowflake and 
 
 We will examine the trifecta of data engineering tools — the Airflow stack for orchestrating data pipelines, DBT for data transformations, and Snowflake as the data warehouse — that has been gaining enormous industry popularity. With this combination, data engineers have all the tools they need to organise their data workflows, promote teamwork, and ultimately produce actionable insights that will lead to business growth.
 
-![alt text](image.png)
-![alt text](image-1.png)
+![image](https://github.com/ethando9999/DBT-DAG/assets/66867316/efc4a5e8-bc69-488b-a1a7-613b7a633873)
+
 
 Requirements
 ============
