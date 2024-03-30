@@ -1,16 +1,29 @@
-Overview
-========
+Build an ELT Pipeline, using industry standard tools such as dbt, Snowflake and Airflow
+=====================================================================================
 
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
+We will examine the trifecta of data engineering tools — the Airflow stack for orchestrating data pipelines, DBT for data transformations, and Snowflake as the data warehouse — that has been gaining enormous industry popularity. With this combination, data engineers have all the tools they need to organise their data workflows, promote teamwork, and ultimately produce actionable insights that will lead to business growth.
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+Requirements
+============
+
+- Snowflake account
+- Docker Desktop
+- Python 3
+- DBT-Core
+- Astro CLI
+ 
+To install Astro CLI, consult [this link](https://docs.astronomer.io/astro/cli/install-cli).
 
 Project Contents
 ================
 
 Your Astro project contains the following files and folders:
 
-- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes two example DAGs:
-    - `example_dag_basic`: This DAG shows a simple ETL data pipeline example with three TaskFlow API tasks that run daily.
-    - `example_dag_advanced`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
+- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes example DAGs:
+    - `dbt_dag`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
 - Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
 - include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
 - packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
@@ -42,8 +55,3 @@ Deploy Your Project to Astronomer
 =================================
 
 If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://docs.astronomer.io/cloud/deploy-code/
-
-Contact
-=======
-
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
